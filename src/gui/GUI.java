@@ -17,7 +17,9 @@ public class GUI extends javax.swing.JFrame {
         MenuUserP.setVisible(false);
         ViewbookP.setVisible(false);
         MenuAdminP.setVisible(false);
-        Signup.setVisible(false);
+        SignupP.setVisible(false);
+        ViewReserveAP.setVisible(false);
+        ViewReserveMP.setVisible(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -33,7 +35,34 @@ public class GUI extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        Signup = new javax.swing.JPanel();
+        MenuAdminP = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        MenuUserP = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        ViewReserveMP = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jButton18 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        ViewReserveAP = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jButton16 = new javax.swing.JButton();
+        jLabel18 = new javax.swing.JLabel();
+        SignupP = new javax.swing.JPanel();
         jTextField1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -54,23 +83,11 @@ public class GUI extends javax.swing.JFrame {
         jPasswordField1 = new javax.swing.JPasswordField();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        MenuAdminP = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        MenuUserP = new javax.swing.JPanel();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
         ViewbookP = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel4 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library");
@@ -136,106 +153,52 @@ public class GUI extends javax.swing.JFrame {
 
         getContentPane().add(LoginP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
-        Signup.setMaximumSize(new java.awt.Dimension(800, 600));
-        Signup.setMinimumSize(new java.awt.Dimension(800, 600));
-        Signup.setPreferredSize(new java.awt.Dimension(800, 600));
-        Signup.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField1KeyReleased(evt);
-            }
-        });
-        Signup.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 160, 30));
-
-        jLabel5.setText("Username");
-        Signup.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 80, 30));
-
-        jLabel6.setText("Password");
-        Signup.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 80, 30));
-        Signup.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 160, 30));
-
-        jLabel7.setText("Firstname");
-        Signup.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 80, 30));
-        Signup.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 160, 30));
-
-        jLabel8.setText("Lastname");
-        Signup.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 80, 30));
-
-        jLabel9.setText("Address");
-        Signup.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 80, 30));
-
-        jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                jTextField6KeyReleased(evt);
-            }
-        });
-        Signup.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 160, 30));
-
-        jLabel10.setText("Phone");
-        Signup.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, 80, 30));
-        Signup.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 160, 30));
-
-        jLabel11.setText("E-mail");
-        Signup.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 80, 30));
-
-        jScrollPane2.setViewportView(jTextPane1);
-
-        Signup.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 260, 110));
-
-        jLabel12.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
-        jLabel12.setText("Sign Up");
-        Signup.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, -1, -1));
-
-        jButton7.setText("Back");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-        Signup.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 100, 40));
-
-        jButton8.setText("Sign Up");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-        Signup.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, 100, 40));
-        Signup.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 160, 30));
-
-        jLabel13.setForeground(new java.awt.Color(255, 0, 0));
-        Signup.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 80, 30));
-
-        jLabel14.setForeground(new java.awt.Color(255, 0, 0));
-        Signup.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 160, 20));
-
-        getContentPane().add(Signup, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
-
         MenuAdminP.setMaximumSize(new java.awt.Dimension(800, 600));
         MenuAdminP.setMinimumSize(new java.awt.Dimension(800, 600));
         MenuAdminP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton9.setText("View Borrow");
-        MenuAdminP.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 160, 60));
+        MenuAdminP.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 390, 160, 60));
 
         jButton10.setText("Add Book");
-        MenuAdminP.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 80, 160, 60));
+        MenuAdminP.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 150, 160, 60));
 
         jButton11.setText("Edit Book");
-        MenuAdminP.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 160, 60));
+        MenuAdminP.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 150, 160, 60));
 
         jButton12.setText("Edit Book");
-        MenuAdminP.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 160, 60));
+        MenuAdminP.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 230, 160, 60));
 
         jButton13.setText("Delete Book");
-        MenuAdminP.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 160, 60));
+        MenuAdminP.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 160, 60));
 
         jButton14.setText("View Book");
-        MenuAdminP.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 320, 160, 60));
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, 160, 60));
 
         jButton15.setText("View Reserve");
-        MenuAdminP.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 160, 60));
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 310, 160, 60));
+
+        jButton20.setText("Log Out");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 160, 60));
+
+        jLabel15.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel15.setText("ADMIN");
+        MenuAdminP.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 420, 110));
 
         getContentPane().add(MenuAdminP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
@@ -246,7 +209,7 @@ public class GUI extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton3.setText("Borrow Book");
-        MenuUserP.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, 160, 50));
+        MenuUserP.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 260, 160, 50));
 
         jButton4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton4.setText("View Book");
@@ -255,13 +218,196 @@ public class GUI extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
-        MenuUserP.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 310, 160, 50));
+        MenuUserP.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 340, 160, 50));
 
         jButton5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jButton5.setText("Reserve Book");
-        MenuUserP.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 200, 160, 50));
+        MenuUserP.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 260, 160, 50));
+
+        jButton17.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton17.setText("View Reserve");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+        MenuUserP.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 340, 160, 50));
+
+        jButton19.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jButton19.setText("Log Out");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+        MenuUserP.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 160, 50));
+
+        jLabel16.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel16.setText("MENU");
+        MenuUserP.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 350, 110));
 
         getContentPane().add(MenuUserP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+
+        ViewReserveMP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "BookName", "Date", "DueDate", "ReceiveDate"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable3.getTableHeader().setReorderingAllowed(false);
+        jScrollPane4.setViewportView(jTable3);
+        jTable3.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        if (jTable3.getColumnModel().getColumnCount() > 0) {
+            jTable3.getColumnModel().getColumn(0).setMinWidth(30);
+            jTable3.getColumnModel().getColumn(0).setMaxWidth(30);
+        }
+
+        ViewReserveMP.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 760, 420));
+
+        jButton18.setText("Back");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+        ViewReserveMP.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 110, 40));
+
+        jLabel17.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel17.setText("RESERVE");
+        ViewReserveMP.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 460, 70));
+
+        getContentPane().add(ViewReserveMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+
+        ViewReserveAP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "BookName", "Date", "DueDate", "ReceiveDate"
+            }
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jTable2.setColumnSelectionAllowed(true);
+        jTable2.getTableHeader().setReorderingAllowed(false);
+        jScrollPane3.setViewportView(jTable2);
+        jTable2.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        if (jTable2.getColumnModel().getColumnCount() > 0) {
+            jTable2.getColumnModel().getColumn(0).setMinWidth(30);
+            jTable2.getColumnModel().getColumn(0).setMaxWidth(30);
+        }
+
+        ViewReserveAP.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 760, 420));
+
+        jButton16.setText("Back");
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
+        ViewReserveAP.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 110, 40));
+
+        jLabel18.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel18.setText("ALL RESERVES");
+        ViewReserveAP.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 10, 720, 70));
+
+        getContentPane().add(ViewReserveAP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+
+        SignupP.setMaximumSize(new java.awt.Dimension(800, 600));
+        SignupP.setMinimumSize(new java.awt.Dimension(800, 600));
+        SignupP.setPreferredSize(new java.awt.Dimension(800, 600));
+        SignupP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField1KeyReleased(evt);
+            }
+        });
+        SignupP.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, 160, 30));
+
+        jLabel5.setText("Username");
+        SignupP.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 80, 30));
+
+        jLabel6.setText("Password");
+        SignupP.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 170, 80, 30));
+        SignupP.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 220, 160, 30));
+
+        jLabel7.setText("Firstname");
+        SignupP.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 80, 30));
+        SignupP.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 220, 160, 30));
+
+        jLabel8.setText("Lastname");
+        SignupP.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, 80, 30));
+
+        jLabel9.setText("Address");
+        SignupP.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 80, 30));
+
+        jTextField6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField6KeyReleased(evt);
+            }
+        });
+        SignupP.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 270, 160, 30));
+
+        jLabel10.setText("Phone");
+        SignupP.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 270, 80, 30));
+        SignupP.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 160, 30));
+
+        jLabel11.setText("E-mail");
+        SignupP.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 270, 80, 30));
+
+        jScrollPane2.setViewportView(jTextPane1);
+
+        SignupP.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 330, 260, 110));
+
+        jLabel12.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel12.setText("Sign Up");
+        SignupP.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 0, -1, -1));
+
+        jButton7.setText("Back");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+        SignupP.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 100, 40));
+
+        jButton8.setText("Sign Up");
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
+        SignupP.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 510, 100, 40));
+        SignupP.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 170, 160, 30));
+
+        jLabel13.setForeground(new java.awt.Color(255, 0, 0));
+        SignupP.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 170, 80, 30));
+
+        jLabel14.setForeground(new java.awt.Color(255, 0, 0));
+        SignupP.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 300, 160, 20));
+
+        getContentPane().add(SignupP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         ViewbookP.setMaximumSize(new java.awt.Dimension(800, 600));
         ViewbookP.setMinimumSize(new java.awt.Dimension(800, 600));
@@ -309,10 +455,6 @@ public class GUI extends javax.swing.JFrame {
 
         ViewbookP.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 740, 420));
 
-        jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setText("Book Lists");
-        ViewbookP.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 20, -1, -1));
-
         jButton6.setText("Back");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,6 +462,10 @@ public class GUI extends javax.swing.JFrame {
             }
         });
         ViewbookP.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 120, 40));
+
+        jLabel19.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel19.setText("ALL BOOKS");
+        ViewbookP.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 550, 70));
 
         getContentPane().add(ViewbookP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
@@ -364,7 +510,11 @@ public class GUI extends javax.swing.JFrame {
             model.removeRow(i);
         }
         ViewbookP.setVisible(false);
-        MenuUserP.setVisible(true);
+        if (user.getIsAdmin()) {
+            MenuAdminP.setVisible(true);
+        } else {
+            MenuUserP.setVisible(true);
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -374,7 +524,7 @@ public class GUI extends javax.swing.JFrame {
             try {
                 user.register(jTextField1.getText(), jPasswordField1.getText(), jTextField3.getText(), jTextField4.getText(), jTextPane1.getText(), jTextField6.getText(), jTextField7.getText());
                 JOptionPane.showMessageDialog(this, "Sign up success!", "Success", JOptionPane.WARNING_MESSAGE);
-                Signup.setVisible(false);
+                SignupP.setVisible(false);
                 LoginP.setVisible(true);
             } catch (SQLException ex) {
                 System.err.println(ex);
@@ -391,12 +541,12 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        Signup.setVisible(false);
+        SignupP.setVisible(false);
         LoginP.setVisible(true);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Signup.setVisible(true);
+        SignupP.setVisible(true);
         LoginP.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -446,6 +596,56 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTextField6KeyReleased
 
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        MenuAdminP.setVisible(false);
+        ViewbookP.setVisible(true);
+        ViewBook();
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        MenuAdminP.setVisible(false);
+        ViewReserveAP.setVisible(true);
+        ViewReserveA();
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+        int rowCount = model.getRowCount();
+        for (int i = rowCount - 1; i >= 0; i--) {
+            model.removeRow(i);
+        }
+        ViewReserveAP.setVisible(false);
+        MenuAdminP.setVisible(true);
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        MenuUserP.setVisible(false);
+        ViewReserveMP.setVisible(true);
+        ViewReserveM();
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        DefaultTableModel model = (DefaultTableModel) jTable3.getModel();
+        int rowCount = model.getRowCount();
+        for (int i = rowCount - 1; i >= 0; i--) {
+            model.removeRow(i);
+        }
+        ViewReserveMP.setVisible(false);
+        MenuUserP.setVisible(true);
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        user.logout();
+        MenuUserP.setVisible(false);
+        LoginP.setVisible(true);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+        user.logout();
+        MenuAdminP.setVisible(false);
+        LoginP.setVisible(true);
+    }//GEN-LAST:event_jButton20ActionPerformed
+
     public static boolean checkNum(String str) {
         try {
             double d = Double.parseDouble(str);
@@ -453,6 +653,47 @@ public class GUI extends javax.swing.JFrame {
             return false;
         }
         return true;
+    }
+
+    public void ViewReserveM() {
+        DefaultTableModel model = (DefaultTableModel) jTable3.getModel();
+        try {
+            con = ConnectionBuilder.getConnection();
+            ps = con.prepareStatement("SELECT r.re_id, m.fname, b.book_name, r.re_date, r.re_duedate, r.re_receive FROM Meepooh.reserve r JOIN Meepooh.member m ON r.mem_id = m.mem_id JOIN Meepooh.book b ON r.book_id = b.book_id WHERE m.mem_id = ?");
+            ps.setInt(1, user.getMemId());
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                model.addRow(new Object[]{rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDate(4), rs.getDate(5), rs.getDate(6)});
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            }
+        }
+    }
+
+    public void ViewReserveA() {
+        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+        try {
+            con = ConnectionBuilder.getConnection();
+            ps = con.prepareStatement("SELECT r.re_id, m.fname, b.book_name, r.re_date, r.re_duedate, r.re_receive FROM Meepooh.reserve r JOIN Meepooh.member m ON r.mem_id = m.mem_id JOIN Meepooh.book b ON r.book_id = b.book_id");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                model.addRow(new Object[]{rs.getInt(1), rs.getString(2), rs.getString(3), rs.getDate(4), rs.getDate(5), rs.getDate(6)});
+            }
+        } catch (SQLException ex) {
+            System.err.println(ex);
+        } finally {
+            try {
+                con.close();
+            } catch (SQLException ex) {
+                System.err.println(ex);
+            }
+        }
     }
 
     public void ViewBook() {
@@ -482,6 +723,8 @@ public class GUI extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Wrong Username or Password!", "Invalid", JOptionPane.WARNING_MESSAGE);
         } else {
             System.out.println("Login success");
+            usernameLIF.setText("");
+            passwordLIF.setText("");
             LoginP.setVisible(false);
             setId(user.getMemId());
             setUser();
@@ -550,7 +793,9 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPanel LoginP;
     private javax.swing.JPanel MenuAdminP;
     private javax.swing.JPanel MenuUserP;
-    private javax.swing.JPanel Signup;
+    private javax.swing.JPanel SignupP;
+    private javax.swing.JPanel ViewReserveAP;
+    private javax.swing.JPanel ViewReserveMP;
     private javax.swing.JPanel ViewbookP;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -559,7 +804,12 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton13;
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -574,9 +824,13 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -585,7 +839,11 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
