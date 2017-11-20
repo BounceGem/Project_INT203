@@ -45,10 +45,10 @@ public class User {
         this.setIsAdmin(0);
     }
 
-    public void register(String firstname, String lastname, String role, String position, String mobile, String user, String pass, String faculty) throws SQLException {
+    public void register(String user, String password, String fname, String lname, String address, String phone, String email) throws SQLException {
         try (Connection con = ConnectionBuilder.getConnection()) {
             PreparedStatement regis
-                    = con.prepareStatement("INSERT INTO Meepooh.member (`memberid`, `username`, `password`, `fname`, `lname`, `address`, `phone`, `email`, `isadmin`) "
+                    = con.prepareStatement("INSERT INTO Meepooh.member (`mem_id`, `username`, `password`, `fname`, `lname`, `address`, `phone`, `email`, `isadmin`) "
                             + "VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?);");
             regis.setString(1, user);
             regis.setString(2, password);
