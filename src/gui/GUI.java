@@ -29,6 +29,16 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        EditBookP = new javax.swing.JPanel();
+        MenuAdminP = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jLabel15 = new javax.swing.JLabel();
+        jButton21 = new javax.swing.JButton();
         AddBookP = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
@@ -91,15 +101,6 @@ public class GUI extends javax.swing.JFrame {
         jTable3 = new javax.swing.JTable();
         jButton18 = new javax.swing.JButton();
         jLabel17 = new javax.swing.JLabel();
-        MenuAdminP = new javax.swing.JPanel();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jLabel15 = new javax.swing.JLabel();
-        jButton21 = new javax.swing.JButton();
         MenuUserP = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -124,6 +125,63 @@ public class GUI extends javax.swing.JFrame {
         setResizable(false);
         setSize(new java.awt.Dimension(800, 600));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(EditBookP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
+
+        MenuAdminP.setMaximumSize(new java.awt.Dimension(800, 600));
+        MenuAdminP.setMinimumSize(new java.awt.Dimension(800, 600));
+        MenuAdminP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton9.setText("View Member");
+        MenuAdminP.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 160, 60));
+
+        jButton10.setText("Add Book");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 160, 60));
+
+        jButton11.setText("Edit Book");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 160, 60));
+
+        jButton14.setText("View Book");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 160, 60));
+
+        jButton15.setText("View Reserve");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 160, 60));
+
+        jButton20.setText("Log Out");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+        MenuAdminP.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 160, 60));
+
+        jLabel15.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
+        jLabel15.setText("ADMIN");
+        MenuAdminP.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 420, 110));
+
+        jButton21.setText("View Borrow");
+        MenuAdminP.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 160, 60));
+
+        getContentPane().add(MenuAdminP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         AddBookP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -459,57 +517,6 @@ public class GUI extends javax.swing.JFrame {
         ViewReserveMP.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 460, 70));
 
         getContentPane().add(ViewReserveMP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
-
-        MenuAdminP.setMaximumSize(new java.awt.Dimension(800, 600));
-        MenuAdminP.setMinimumSize(new java.awt.Dimension(800, 600));
-        MenuAdminP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton9.setText("View Member");
-        MenuAdminP.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 370, 160, 60));
-
-        jButton10.setText("Add Book");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-        MenuAdminP.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 210, 160, 60));
-
-        jButton11.setText("Edit Book");
-        MenuAdminP.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 160, 60));
-
-        jButton14.setText("View Book");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-        MenuAdminP.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 160, 60));
-
-        jButton15.setText("View Reserve");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-        MenuAdminP.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 290, 160, 60));
-
-        jButton20.setText("Log Out");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-        MenuAdminP.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 520, 160, 60));
-
-        jLabel15.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
-        jLabel15.setText("ADMIN");
-        MenuAdminP.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 20, 420, 110));
-
-        jButton21.setText("View Borrow");
-        MenuAdminP.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, 160, 60));
-
-        getContentPane().add(MenuAdminP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         MenuUserP.setMaximumSize(new java.awt.Dimension(800, 600));
         MenuUserP.setMinimumSize(new java.awt.Dimension(800, 600));
@@ -926,6 +933,10 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jTextField5KeyReleased
 
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton11ActionPerformed
+
     public void PubMAX() {
         try {
             con = ConnectionBuilder.getConnection();
@@ -1217,6 +1228,7 @@ public class GUI extends javax.swing.JFrame {
     User user = new User();
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel AddBookP;
+    private javax.swing.JPanel EditBookP;
     private javax.swing.JPanel LoginP;
     private javax.swing.JPanel MenuAdminP;
     private javax.swing.JPanel MenuUserP;
