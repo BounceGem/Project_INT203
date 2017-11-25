@@ -31,6 +31,7 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel44 = new javax.swing.JLabel();
         AddBookP = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jButton12 = new javax.swing.JButton();
@@ -57,6 +58,7 @@ public class GUI extends javax.swing.JFrame {
         jLabel32 = new javax.swing.JLabel();
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
+        jLabel45 = new javax.swing.JLabel();
         ViewMemberP = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         jButton37 = new javax.swing.JButton();
@@ -169,6 +171,9 @@ public class GUI extends javax.swing.JFrame {
         jButton24 = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
 
+        jLabel44.setIcon(new javax.swing.ImageIcon("/Users/sophon/Desktop/joanna-kosinska-129039.png")); // NOI18N
+        jLabel44.setText("jLabel44");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Library");
         setMaximumSize(new java.awt.Dimension(800, 600));
@@ -180,8 +185,7 @@ public class GUI extends javax.swing.JFrame {
         AddBookP.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel20.setFont(new java.awt.Font("Forte", 1, 100)); // NOI18N
-        jLabel20.setText("ADD BOOK");
-        AddBookP.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 550, 100));
+        AddBookP.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, 550, 100));
 
         jButton12.setText("Back");
         jButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -189,46 +193,39 @@ public class GUI extends javax.swing.JFrame {
                 jButton12ActionPerformed(evt);
             }
         });
-        AddBookP.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 532, 120, 50));
-
-        jLabel4.setText("Quntity");
+        AddBookP.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 120, 50));
         AddBookP.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 280, 70, 30));
-
-        jLabel21.setText("Name");
         AddBookP.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 200, 70, 30));
 
+        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField5ActionPerformed(evt);
+            }
+        });
         jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField5KeyReleased(evt);
             }
         });
-        AddBookP.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 200, 150, 30));
+        AddBookP.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 150, 30));
 
         jTextField8.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField8KeyReleased(evt);
             }
         });
-        AddBookP.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 150, 30));
+        AddBookP.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 390, 150, 30));
 
         jTextField9.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField9KeyReleased(evt);
             }
         });
-        AddBookP.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 150, 30));
-
-        jLabel22.setText("Author");
+        AddBookP.add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 260, 100, 30));
         AddBookP.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 240, 70, 30));
-
-        jLabel23.setText("Type");
         AddBookP.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 70, 30));
-
-        jLabel24.setText("Category");
         AddBookP.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, 70, 30));
-        AddBookP.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 360, 150, 30));
-
-        jLabel25.setText("FinePerDay");
+        AddBookP.add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 390, 150, 30));
         AddBookP.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, 70, 30));
 
         jTextField12.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -236,28 +233,22 @@ public class GUI extends javax.swing.JFrame {
                 jTextField12KeyReleased(evt);
             }
         });
-        AddBookP.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 200, 150, 30));
-        AddBookP.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 280, 150, 30));
+        AddBookP.add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 210, 110, 30));
+        AddBookP.add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 300, 150, 30));
 
         jTextField14.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 jTextField14KeyReleased(evt);
             }
         });
-        AddBookP.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 320, 150, 30));
-
-        jLabel26.setText("FineLost");
+        AddBookP.add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 340, 150, 30));
         AddBookP.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 70, 30));
-
-        jLabel27.setText("Year");
         AddBookP.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, 70, 30));
-
-        jLabel28.setText("Publisher");
         AddBookP.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, 70, 30));
 
-        AddBookP.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 320, 150, 30));
+        AddBookP.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 150, 30));
 
-        AddBookP.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 150, 30));
+        AddBookP.add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 150, 30));
 
         jButton13.setText("Add");
         jButton13.addActionListener(new java.awt.event.ActionListener() {
@@ -265,11 +256,9 @@ public class GUI extends javax.swing.JFrame {
                 jButton13ActionPerformed(evt);
             }
         });
-        AddBookP.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 530, 120, 50));
-        AddBookP.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 150, 30));
-
-        jLabel32.setText("Price");
-        AddBookP.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, 70, 30));
+        AddBookP.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 490, 120, 50));
+        AddBookP.add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 260, 150, 30));
+        AddBookP.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 480, 70, 30));
 
         jButton22.setFont(new java.awt.Font("Dialog", 1, 5)); // NOI18N
         jButton22.setText("ADD");
@@ -278,7 +267,7 @@ public class GUI extends javax.swing.JFrame {
                 jButton22ActionPerformed(evt);
             }
         });
-        AddBookP.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, 50, 30));
+        AddBookP.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 210, 50, 30));
 
         jButton23.setFont(new java.awt.Font("Dialog", 1, 5)); // NOI18N
         jButton23.setText("ADD");
@@ -287,7 +276,11 @@ public class GUI extends javax.swing.JFrame {
                 jButton23ActionPerformed(evt);
             }
         });
-        AddBookP.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 240, 50, 30));
+        AddBookP.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 260, 50, 30));
+
+        jLabel45.setIcon(new javax.swing.ImageIcon("/Users/sophon/Desktop/joanna-kosinska-129039.png")); // NOI18N
+        jLabel45.setText("jLabel45");
+        AddBookP.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 580));
 
         getContentPane().add(AddBookP, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
@@ -1477,6 +1470,10 @@ public class GUI extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jButton9ActionPerformed
 
+    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5ActionPerformed
+
     public void Edit(String name, int type, int cat, int author, int pub, int year, int price, int qty, int id) {
         try (Connection con = ConnectionBuilder.getConnection()) {
             PreparedStatement ps = con.prepareStatement("UPDATE Meepooh.book SET book_name=?, type_id=?, cat_id=?, author_id=?, pub_id=?, book_year=?, book_price=?, qty=? WHERE book_id =?");
@@ -2094,6 +2091,8 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
